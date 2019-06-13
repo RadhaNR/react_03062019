@@ -1,0 +1,20 @@
+{
+    "title": "Welcome to Internationalization in React",
+    "first": "first",
+    "second": "second",
+    "lifeCycle": "lifeCycle",
+    "contextApi": "Context API",
+    "addEmployeeLabel": "Add Employee",
+    "employeeList": "Employee List",
+    "chartLabel": "Chart",
+    "controlledComponent": "Controlled Component",
+    "unControlledComponent": "Un Controlled component",
+    "productList": "Product List",
+    "cartList": "CartList",
+    "countLabel": "List of Products available",
+    "firstNameLabel": "Name",
+    "es6BtnLabel": "ES6 Button",
+    "es5BtnLabel": "ES5 Button",
+    "noEmpCountText": "No of Employees present",
+    "noEmpText":"No employees are avialable"
+}

@@ -1,22 +1,16 @@
 
-
 import React, {Component} from 'react';
+import { withTranslation  } from 'react-i18next';
 
-class Second extends Component {
+const Second = (props) => {
+    const {t} = props;
+    return (
+        <div>{t('second')}: {props.name}
+            <button onClick={() => props.changeName(Math.random()) }>change</button>
+        </div>
 
-    changeName =()=> {
-        
-        
-    }
-    render() {
-        return (
-            <div>Second: {this.props.name}
-                <button onClick={()=>this.props.changeName(Math.random())}>change</button>
-            </div>
-
-        );
-    }
+    );
 }
 
-export default Second;
+export default withTranslation()(Second);
 

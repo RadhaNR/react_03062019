@@ -4,12 +4,16 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
-    "i18next": "^17.0.2",
+    "hoist-non-react-statics": "^3.3.0",
+    "i18next": "^17.0.3",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-xhr-backend": "^3.0.0",
     "loadash": "^1.0.0",
     "react": "^16.8.6",
     "react-d3-pie-chart": "^1.0.3",
     "react-dom": "^16.8.6",
     "react-i18next": "^10.11.0",
+    "react-intl": "^2.9.0",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
@@ -22,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "./build",
+  "homepage": "./",
   "eslintConfig": {
     "extends": "react-app"
   },

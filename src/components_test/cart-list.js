@@ -13,5 +13,5 @@ const CartListComp = (props) => {
             </div>
         )
 }
-const CartList = ajaxHoc(CartListComp, 'http://localhost:3000/cartList');
+const CartList = ajaxHoc(CartListComp, 'http://localhost:4000/cartList');
 export default CartList;

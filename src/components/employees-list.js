@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 import * as employeeActions from '../actions/employeeActions.js';
+import { withTranslation } from 'react-i18next';
 
 class EmployeeList extends Component {
 
@@ -12,9 +13,10 @@ class EmployeeList extends Component {
         this.props.actions.deleteEmployee(employee.sapId);
     }
     render() {
+        const {t} = this.props
         return (
             <div>
-            {this.props.employee.length ? <div>No of Employee's present: {this.props.employee.length}</div>: <div>No employees are avialable</div>}
+            {this.props.employee.length ? <div>{t('noEmpCountText')}: {this.props.employee.length}</div>: <div>{t('noEmpText')}</div>}
                 
 
                 {
@@ -43,4 +45,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(EmployeeList);
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(EmployeeList));

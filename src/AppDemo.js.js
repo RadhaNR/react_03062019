@@ -9,7 +9,10 @@ import ParentChild from './components/parent-child.js';
 
 import NotFound from './components/not-found.js';
 
+import { useTranslation} from 'react-i18next';
+
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>

@@ -1,0 +1,20 @@
+{
+    "title": "Willkommen bei Internationalization in React",
+    "first": "Eerste",
+    "second": "tweede",
+    "lifeCycle": "levenscyclus",
+    "contextApi": "Context API",
+    "addEmployeeLabel": "Voeg werknemer toe",
+    "employeeList": "Werknemerslijst",
+    "chartLabel": "tabel",
+    "controlledComponent": "Gecontroleerde component",
+    "unControlledComponent": "Niet-gecontroleerde component",
+    "productList": "Product lijst",
+    "cartList": "CartList",
+    "countLabel": "Lijst met beschikbare producten",
+    "firstNameLabel": "Naam",
+    "es6BtnLabel": "ES6 Knop",
+    "es5BtnLabel": "ES5 Knop",
+    "noEmpCountText": "Aantal aanwezige medewerkers",
+    "noEmpText":"Er zijn geen werknemers beschikbaar"
+}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Second from './second.js';
+import { withTranslation, Translation  } from 'react-i18next';
 
 class First extends Component {
 
@@ -31,12 +32,12 @@ class First extends Component {
         this.setState({name: data});
     }
     render() {
-        console.log("in render")
+        let { t  } = this.props;
         return (
             <div>
-                <div>Name: {this.state.name}</div>
-                <button onClick={this.es6Method}>  Es6 fun</button>
-                <button onClick={this.es5Method}>  ES5 fun</button>
+                <div>{t('firstNameLabel')}: {this.state.name}</div>
+                <button onClick={this.es6Method}> {t('es6BtnLabel')}</button>
+                <button onClick={this.es5Method}>  {t('es5BtnLabel')}</button>
                 <button onClick={(event) => this.es6WithParam(1234, event) }>  ES6 With Param</button>
                 <Second name={this.state.name} changeName={this.changeName}/>
             </div>
@@ -44,4 +45,4 @@ class First extends Component {
     }
 }
 
-export default First;
+export default withTranslation()(First);
